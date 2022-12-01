@@ -41,7 +41,7 @@ Console.WriteLine(nam_1);
 
 Console.ResetColor();
 
-Console.WriteLine("Проверим второй вариант программы");
+Console.WriteLine("Проверим второй вариант c применением тернарного оператора :");
 
 Console.Write("Введите первое число :");
 int nam_3 = Convert.ToInt32(Console.ReadLine());
@@ -51,11 +51,17 @@ int nam_4 = Convert.ToInt32(Console.ReadLine());
 
 Console.ForegroundColor = ConsoleColor.Green;
 
+if (nam_3 == nam_4)
+{
+Console.WriteLine("числа равны");
+}
+else
+{
 string V = "0";
 
-V = nam_3 > nam_4 ? ("наибольшее первое число") : ("наибольшее второе число    { если утверждение не верно, то в этом случае смею утверждать, что числа равны }");
+V = nam_3 > nam_4 ? ("наибольшее первое число") : ("наибольшее второе число");
 
 Console.WriteLine(V);
+}
 
 Console.ResetColor();
-
