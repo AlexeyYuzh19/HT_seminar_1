@@ -30,7 +30,8 @@ if (nam_1 == nam_2)
 {
 Console.WriteLine("числа равны");
 }
-else
+
+if (nam_1 < nam_2)
 {
 Console.Write("наибольшее число: ");
 Console.WriteLine(nam_2);
@@ -50,8 +51,11 @@ int nam_4 = Convert.ToInt32(Console.ReadLine());
 
 Console.ForegroundColor = ConsoleColor.Green;
 
-string V = nam_3 > nam_4 ? ("наибольшее первое число, второе число меньше первого") : ("наибольшее второе число, первое число меньше второго");
+string V = "0";
+
+V = nam_3 > nam_4 ? ("наибольшее первое число") : ("наибольшее второе число    { если утверждение не верно, то в этом случае смею утверждать, что числа равны }");
 
 Console.WriteLine(V);
 
 Console.ResetColor();
+
