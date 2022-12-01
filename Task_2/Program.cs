@@ -19,7 +19,7 @@ int namb_2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите третье число :");
 int namb_3 = Convert.ToInt32(Console.ReadLine());
 
-Console.ForegroundColor = ConsoleColor.Green;
+Console.ForegroundColor = ConsoleColor.Red;
 
 int maxi = namb_1;
 
