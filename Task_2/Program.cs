@@ -64,6 +64,17 @@ else
 int max = Math.Max(nam_1, nam_2);
 max = Math.Max(max, nam_3);
 
-Console.Write("наибольшее число: " +max);
+Console.WriteLine("наибольшее число: " +max);
 }
+
+Console.ForegroundColor = ConsoleColor.Blue;
+
+Console.WriteLine("и проверка оператором Match в одну строку :");
+
+int maxic = Math.Max(Math.Max(nam_1, nam_2), nam_3);
+
+Console.Write("наибольшее число: " +maxic);
+
 Console.ResetColor();
+
+
